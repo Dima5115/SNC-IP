@@ -43,7 +43,7 @@ while True:
 	try:
 		r1=requests.get('https://ipapi.co/json/')
 		print("Alamat IP anda:",r1.json()['ip'])
-		ip=input("Masukan alamat IP: ")
+		ip=input("Masukan alamat IP:")
 		r=requests.get('https://ipapi.co/'+ip+'/json')
 		j=json.loads(r.text)
 		print("""
